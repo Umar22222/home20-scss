@@ -1,0 +1,99 @@
+
+@import "./global";
+@import "./header";
+@import "./hero";
+@import "./logosetting";
+@import "./Features";
+@import "./Metrics";
+@import "./Call";
+@import "./Testimonials";
+@import "./cta";
+
+
+
+
+
+@media (max-width: 1200px) {
+    .features-grid,
+    .metrics-grid,
+    .testimonials-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features-grid,
+    .metrics-grid,
+    .testimonials-grid {
+        flex-direction: column;
+    }
+
+    .testimonial img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .cta h3 {
+        font-size: 24px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    .features-grid .feature,
+    .metrics-grid .metric,
+    .testimonials-grid .testimonial {
+        padding: 15px;
+    }
+
+    .testimonial h3 {
+        font-size: 18px;
+    }
+
+    .testimonial p {
+        font-size: 14px;
+    }
+}
